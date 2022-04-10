@@ -91,7 +91,7 @@ def begin
 
     make_guess
 end
-
 end
+
 game = Hangman.new
 game.begin 
