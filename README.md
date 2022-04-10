@@ -2,7 +2,7 @@
 ### Ruby teminal app
 GitHub Link: https://github.com/patjd0/PatrickDanenas_T1A3
 
-## App Description:
+## Application Description:
 This is a brain training app designed to get you out of the brain foggy state. This app tests you with its three main features, a math test, a trivia quiz and a game of good old fashion hangman. These games will give you a final score that will be tallied into an overall user score for you to improve upone.
 
 ## Functionality
@@ -10,20 +10,26 @@ This is a brain training app designed to get you out of the brain foggy state. T
 ####  User & Menu:
 - Upon commencing the application, the user will be asked to provide a few simple details. Name and Age, from this point  it will bring the user to the main menu. This page will display three game choices, Math, Hangman and Trivia along with the name of the user and overall scores.
 
+<br>
 
 #### Math Game
 - This game asks ten random multiplication questions, tallying up a score out of ten and adding it to the users overall score.
 
 ![math game](/docs/matSnip.png)
 
+<br>
 
 #### Hangman
 - This game is the same game you played as a kid in school. You are given a hint as to what the word is and number of letters, you are also displayed with a teaser of the number of characters along with correct letters. The final score will be determined by the number of lives left, and updated to the users overall score.
 
 ![hangman game](/docs/hangSnip.png)
 
+<br>
+
 #### Trivia
 - This game is a trivia game. The user will be asked ten random questions from their choice in three catigories geography, modern history and ancient history. These scores will be tallied up with the users overall score.
+
+<br>
 
 ## Installation Instructions
 1. You will need Ruby Installed click the link here: https://www.ruby-lang.org/en/
@@ -39,6 +45,15 @@ This is a brain training app designed to get you out of the brain foggy state. T
 5. Start app with:
 - ruby main.rb
 
+<br>
+
+## Gemfile
+- rspec "~> 3.11"
+- tty "~> 0.5.0"
+- tty-prompt "~> 0.6.0"
+
+<br>
+
 ## Flow Chart
 This was the original plan for the application.
 ![flow chart](/docs/BigBrainApp.png)
@@ -49,7 +64,8 @@ Trello link: https://trello.com/b/z8snmedN/brain-training-application
 
 ![Trello](/docs/trell.png)
 
-
+### End
+This application is a work in progress.
 
 
 
