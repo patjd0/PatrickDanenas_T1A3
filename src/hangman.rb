@@ -1,4 +1,7 @@
 require 'tty-prompt'
+require_relative 'hangman'
+require_relative 'math'
+require_relative 'user'
 
 class Hangman
 def initialize
@@ -12,7 +15,7 @@ def initialize
     end
 end
 
- #Hangman words and clues bellow
+#Hangman words and clues bellow
 def words
     [
      ["bandwagon", "To cheer for a winning team"],
@@ -24,18 +27,17 @@ def words
     ]
 end
 
-
-
   def print_teaser last_guess = nil
     update_teaser(last_guess) unless last_guess.nil?
     puts @word_teaser
   end
 
   def update_teaser last_guess
+# .split splits the teaser with a small space between letters    
     new_teaser = @word_teaser.split
 
     new_teaser.each_with_index do |letter, index|
-# replace _ with letter if it matches letter in word
+# replace _ with letter if it matches correct letter in word
       if letter == '_' && @word.first[index] == last_guess
         new_teaser[index] = last_guess
       end
@@ -43,8 +45,6 @@ end
 
     @word_teaser = new_teaser.join(' ')
   end
-
-
 
 def make_guess  
     if @lives > 0
@@ -83,10 +83,11 @@ end
 
 def begin
 #When starting the game this is the first thing you will see 
-    puts "New game, your word is #{ @word.first.size } characters long"
+    puts ()
+    puts "New game of Hangman, your word is #{ @word.first.size } characters long"
     puts "To exit game type 'exit'"
-    print_teaser
 
+    print_teaser
     puts "Clue: #{ @word.last }"
 
     make_guess

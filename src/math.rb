@@ -32,5 +32,6 @@ puts "Welcome to math Big Brain!"
  puts()
  puts("Thank you for playing!")
  puts("You scored #{score} out of " + String(i) + ".")
+ puts ()
 
 #still working out how to add score to user
