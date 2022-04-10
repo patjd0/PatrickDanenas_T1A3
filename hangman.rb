@@ -56,7 +56,6 @@ def make_guess
 
       if guess == "exit"
         puts "Thank you for playing!"
-        
 #if guess is longer than one letter it will prompt you "guess one letter at a time"
       elsif guess.length > 1
         puts "Guess one letter at a time!"
@@ -95,4 +94,4 @@ end
 
 end
 game = Hangman.new
-game.begin
+game.begin 
