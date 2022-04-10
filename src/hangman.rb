@@ -38,7 +38,7 @@ end
 
     new_teaser.each_with_index do |letter, index|
 # replace _ with letter if it matches correct letter in word
-      if letter == '_' && @word.first[index] == last_guess
+if letter == '_' && @word.first[index] == last_guess
         new_teaser[index] = last_guess
       end
     end
@@ -54,29 +54,29 @@ def make_guess
 #good guess = new word first from word bank that was not guessed already.
       good_guess = @word.first.include? guess
 
-      if guess == "exit"
+    if guess == "exit"
         puts "Thank you for playing!"
 #if guess is longer than one letter it will prompt you "guess one letter at a time"
-      elsif guess.length > 1
+    elsif guess.length > 1
         puts "Guess one letter at a time!"
           make_guess
 #if a letter is correct prompt "correct"       
-      elsif good_guess
+    elsif good_guess
         puts "Correct!"
 
         print_teaser guess
 #if word is complete "Nice work"
-        if @word.first == @word_teaser.split.join #.join joins the array back to the string
+    if @word.first == @word_teaser.split.join #.join joins the array back to the string
           puts "Nice work!"
-        else
+    else
 #if word not complete guess again          
           make_guess
-        end
-      else
+    end
+    else
         @lives -= 1     #subtracts one life and prompt try again 
         puts "You have #{ @lives } lives left. Try again!"
         make_guess
-      end
+    end
     else                #when out of lives
       puts "Game over... better luck next time!"
     end
@@ -95,5 +95,6 @@ def begin
 end
 end
 
+#add score to user class and update overall score
 game = Hangman.new
 game.begin 
