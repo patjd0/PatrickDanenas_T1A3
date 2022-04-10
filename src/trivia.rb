@@ -10,6 +10,7 @@ require 'tty-prompt'
   #each option when chosen will output 10 random questions for the user to answer.
   #the user will be given a score out of 10.
 
+#puts () 
 #output you scored  _ out of 10  
-#puts user back at main menu
+#prompt user back at main menu
    #update user overall score.

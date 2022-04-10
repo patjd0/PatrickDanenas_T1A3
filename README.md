@@ -1,4 +1,5 @@
 # Big Brain App
+
 ### Ruby teminal app
 GitHub Link: https://github.com/patjd0/PatrickDanenas_T1A3
 
@@ -32,7 +33,7 @@ This is a brain training app designed to get you out of the brain foggy state. T
 <br>
 
 ## Installation Instructions
-1. You will need Ruby Installed click the link here: https://www.ruby-lang.org/en/
+1. You will need Ruby Installed click the link here for information: https://www.ruby-lang.org/en/
 
 2. Install Bundler gem, to do this type command: 
 - gem install bundler
@@ -51,6 +52,8 @@ This is a brain training app designed to get you out of the brain foggy state. T
 - rspec "~> 3.11"
 - tty "~> 0.5.0"
 - tty-prompt "~> 0.6.0"
+
+![Gems](/docs/gemsnip.png)
 
 <br>
 
