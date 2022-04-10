@@ -47,3 +47,9 @@ Trello link: https://trello.com/b/z8snmedN/brain-training-application
 
 ![Trello](/docs/trell.png)
 
+
+
+
+
+
+
