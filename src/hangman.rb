@@ -28,12 +28,12 @@ def words
 end
 
   def print_teaser last_guess = nil
-    update_teaser(last_guess) unless last_guess.nil?
+    update_teaser(last_guess) unless last_guess.nil? #unless last_guess was not nil
     puts @word_teaser
   end
 
   def update_teaser last_guess
-# .split splits the teaser with a small space between letters    
+# .split splits into an array and the teaser with a small space between letters    
     new_teaser = @word_teaser.split
 
     new_teaser.each_with_index do |letter, index|
@@ -51,7 +51,7 @@ def make_guess
 #if you still have lives remaining keep playing      
       puts "Enter a letter"
       guess = gets.chomp
-
+#good guess = new word first from word bank that was not guessed already.
       good_guess = @word.first.include? guess
 
       if guess == "exit"
@@ -66,9 +66,10 @@ def make_guess
 
         print_teaser guess
 #if word is complete "Nice work"
-        if @word.first == @word_teaser.split.join
+        if @word.first == @word_teaser.split.join #.join joins the array back to the string
           puts "Nice work!"
         else
+#if word not complete guess again          
           make_guess
         end
       else
@@ -87,7 +88,7 @@ def begin
     puts "New game of Hangman, your word is #{ @word.first.size } characters long"
     puts "To exit game type 'exit'"
 
-    print_teaser
+    print_teaser #word in "_ _ _ _"
     puts "Clue: #{ @word.last }"
 
     make_guess

@@ -5,7 +5,7 @@ puts "Welcome to math Big Brain!"
 
   i = 0
   score = 0
-#number of games  
+#number of games/questions  
   while i < 10
   puts()
   	i = i + 1
