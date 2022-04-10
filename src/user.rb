@@ -1,11 +1,13 @@
 require 'tty-prompt'
-require_relative 'hangman'
-require_relative 'math'
-require_relative 'user'
 
 class User
-    def initialize(name, age)
+    attr_reader :name, :age
+    attr_writer :score
+
+    def initialize(name, age, score)
      @name = name
      @age = age
-    end  
+     @score = 0
+    end 
+
 end  
