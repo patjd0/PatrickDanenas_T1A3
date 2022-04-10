@@ -18,4 +18,32 @@ This is a brain training app designed to get you out of the brain foggy state. T
 ![hangman game](image/hangSnip.png)
 
 #### Hangman
-- This game is the same game you played as a kid in school. you are given a hint as to what the word is and number of letters, you are also displayed with a teaser of the number of characters along with correct letters.  
+- This game is the same game you played as a kid in school. You are given a hint as to what the word is and number of letters, you are also displayed with a teaser of the number of characters along with correct letters. The final score will be determined by the number of lives left, and updated to the users overall score.
+
+#### Trivia
+- This game is a trivia game. The user will be asked ten random questions from their choice in three catigories geography, modern history and ancient history. These scores will be tallied up with the users overall score.
+
+## Installation Instructions
+1. You will need Ruby Installed click the link here: https://www.ruby-lang.org/en/
+
+2. Install Bundler gem, to do this type command: 
+- gem install bundler
+
+3. clone the repository to your computer.
+
+4. Install the gems required by typing command:
+- bundle install
+
+5. Start app with:
+- ruby main.rb
+
+## Flow Chart
+This was the original plan for the application.
+![flow chart](image/BigBrainApp.png)
+
+## Trello
+Didnt get as much dones as I would of liked but here is the end result of my trello page.
+Trello link: https://trello.com/b/z8snmedN/brain-training-application
+
+![Trello](image/trell.png)
+
