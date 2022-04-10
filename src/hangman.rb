@@ -42,7 +42,7 @@ end
         new_teaser[index] = last_guess
       end
     end
-
+                   #.join joins array to a string
     @word_teaser = new_teaser.join(' ')
   end
 
