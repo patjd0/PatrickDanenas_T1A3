@@ -59,6 +59,7 @@ This is a brain training app designed to get you out of the brain foggy state. T
 
 ## Flow Chart
 This was the original plan for the application.
+Link: https://trello.com/b/z8snmedN/bigbrain-application
 ![flow chart](/docs/BigBrainApp.png)
 
 ## Trello
