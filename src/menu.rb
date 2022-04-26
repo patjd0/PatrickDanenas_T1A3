@@ -9,6 +9,7 @@ selection = TTY::Prompt.new.select("What game would you like to play? Please sel
   menu.choice 'Hangman', 1 
   menu.choice 'Math Big Brain', 2
   menu.choice 'Trivia', 3
+  menu.choice 'Exit', 4
 
 case selection
 when 1 
@@ -17,7 +18,11 @@ when 2
     require_relative 'math'   #calls math file.
 when 3
     require_relative 'trivia' #calls trivia file.
-
+when 4
+  system "clear"
+  puts "Have a nice day!"
+  #puts "Your Big Brain score was #{}
+  return
 
 end
 end

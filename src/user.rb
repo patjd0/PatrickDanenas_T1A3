@@ -10,6 +10,7 @@ prompt = TTY::Prompt.new
 
 #  key(:age).ask("What is your age?", convert: :int)
 #end
+
 prompt.ask('What is your name?', required: true)
 prompt.ask('How old are you?', required: true)
 
@@ -20,7 +21,7 @@ class User
     def initialize(name, age, score)
      @name = name
      @age = age
-     @score = 0
+     @score = nil
     end 
 # this class to be input into other pages with require 'user'
 end  

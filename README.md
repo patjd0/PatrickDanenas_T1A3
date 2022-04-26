@@ -44,7 +44,7 @@ This is a brain training app designed to get you out of the brain foggy state. T
 - bundle install
 
 5. Start app with:
-- ruby main.rb
+- ruby src/main.rb
 
 <br>
 
