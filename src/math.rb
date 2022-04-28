@@ -38,4 +38,7 @@ puts('Thank you for playing!')
 puts("You scored #{score} out of " + String(i) + '.')
 puts
 
+#------------------------------------------------------------------------------------------
+#score += $points.to_i
+#puts " score #{$points.to_i}"
 # still working out how to add score to user class updating overall score

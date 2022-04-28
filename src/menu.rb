@@ -2,9 +2,11 @@ require 'tty-prompt'
 prompt = TTY::Prompt.new
 
 while true
+#"Your current score is " + "#{$points}!"  
 
-  selection = TTY::Prompt.new.select('What Brain game would you like to play?', cycle: true, marker: '>',
-                                                                                echo: false) do |menu|
+#menu gem prompt and loop 
+  selection = TTY::Prompt.new.select(' What Brain game would you like to play?', cycle: true, marker: '>',
+                                                                                echo: false) do |menu|                                                                             
     # menu options
     menu.default 3
     menu.choice 'Hangman', 1
@@ -20,9 +22,8 @@ while true
     when 3
       require_relative 'trivia' # calls trivia file.
     when 4
-      system 'clear'
-      puts 'Have a nice day!'
-      # puts "Your Big Brain score was #{}
+      system 'clear'  
+      puts "Have a nice day!" # goodbye message and exit loop
       return
 
     end

@@ -5,15 +5,25 @@ prompt = TTY::Prompt.new
 # prompt.ask('How old are you?', required: true)
 
 class User
-  attr_accessor :age, :name, :scores
-
+  attr_accessor :name
   def initialize(name)
-    @name = name
-    @age = age
-    @scores = nil
+    @name = name  
   end
-
-  # def points([])
-  #    @scores << {[]}
-  # end
 end
+
+#--------------------------------------------------------------------------------
+#class Points
+#    attr_accessor :score_all
+#    def initialize(scores)
+#        @score_all = scores
+#    end  
+#    def add_score(game_score)
+#        @score_all = game_score.dispence_score
+#    end    
+#end
+
+#class Game_score
+#    def dispence_score
+#        [1,100]
+#    end    
+#end    
