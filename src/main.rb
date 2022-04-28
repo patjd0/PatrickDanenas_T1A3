@@ -7,8 +7,10 @@ prompt = TTY::Prompt.new
 puts "Welcome To Big Brain!"
 puts "Please enter your name."
     user_name = gets.chomp.capitalize
+
 puts "Please enter your age."    
     age = gets.chomp
+puts ()    
 
 
 # Creates a new cat object, and reaffirms to the user their input with a greeting. 

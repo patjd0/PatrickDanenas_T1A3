@@ -13,7 +13,7 @@ class User
         @scores = nil                         
     end
 
-   # def points([])
-   #     @scores << {[]}
-   # end    
+    #def points([])
+    #    @scores << {[]}
+    #end    
 end

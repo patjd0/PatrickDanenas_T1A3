@@ -3,7 +3,7 @@ prompt = TTY::Prompt.new
 
 while true
 
-selection = TTY::Prompt.new.select("What game would you like to play? Please select from the following options:",  cycle: true, marker: '>', echo: false) do |menu|
+selection = TTY::Prompt.new.select("What Brain game would you like to play?",  cycle: true, marker: '>', echo: false) do |menu|
  #menu options
   menu.default 3
   menu.choice 'Hangman', 1 
