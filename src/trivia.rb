@@ -1,9 +1,31 @@
 require 'tty-prompt'
+require_relative 'user'
 
-# welcome to Big Brain trivia
-# puts ()
+puts "Welcome #{User.name} to Big Brain trivia"
+puts
 
-# please choose a trivia topic!
+while true
+selection = TTY::Prompt.new.select(' Please choose a trivia topic!') do |menu|
+
+    menu.choice 'Geography', 1
+    menu.choice 'Ancient History', 2
+    menu.choice 'Modern History', 3
+    menu.choice 'Return to main menu', 4
+    case selection
+    when 1
+      puts "that was 1"
+    when 2
+      puts "that was 2"
+    when 3
+      puts "that was 3"
+    when 4
+      system 'clear'  
+      puts "Good Game!"
+      return
+    
+    end
+  end
+end
 
 # list of three topics in tty-prompt menu
 # geography, modern history, ancient history.

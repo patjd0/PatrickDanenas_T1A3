@@ -23,7 +23,7 @@ while true
       require_relative 'trivia' # calls trivia file.
     when 4
       system 'clear'  
-      puts "Have a nice day!" # goodbye message and exit loop
+      puts 'Have a nice day!' # goodbye message and exit loop
       return
 
     end

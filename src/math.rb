@@ -1,5 +1,5 @@
 require 'tty-prompt'
-
+require_relative 'user'
 # opening welcome
 puts
 puts 'Welcome to math Big Brain!'
@@ -39,6 +39,8 @@ puts("You scored #{score} out of " + String(i) + '.')
 puts
 
 #------------------------------------------------------------------------------------------
-#score += $points.to_i
-#puts " score #{$points.to_i}"
+#def add (score, points)
+#  return score += points
+#end  
+#puts add(ARGV[0].to_i, ARGV[1].to_i)  #" score #{$points.to_i}"
 # still working out how to add score to user class updating overall score

@@ -9,6 +9,9 @@ class User
   def initialize(name)
     @name = name  
   end
+  #def user_name(name)
+  #  @name = name
+  #end  
 end
 
 #--------------------------------------------------------------------------------
@@ -17,7 +20,7 @@ end
 #    def initialize(scores)
 #        @score_all = scores
 #    end  
-#    def add_score(game_score)
+#   def add_score(game_score)
 #        @score_all = game_score.dispence_score
 #    end    
 #end
