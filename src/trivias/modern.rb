@@ -29,7 +29,7 @@ q10 = "What trophy is awarded to the winner of the NHL playoffs\n(a) Vince Lomba
     Modern.new(q9, "b"),
     Modern.new(q10, "c"), 
 ]
-  def run_test(questions)
+  def run_modern(questions)
     answer = ""
     score = 0
     for question in questions
@@ -39,6 +39,6 @@ q10 = "What trophy is awarded to the winner of the NHL playoffs\n(a) Vince Lomba
             score += 1
         end  
   end 
-  puts ("You scored" + score.to_s + "/" + questions.length().to_s)
+  puts ("You scored " + score.to_s + "/" + questions.length().to_s)
 end
-run_test(questions)
+run_modern(questions)
