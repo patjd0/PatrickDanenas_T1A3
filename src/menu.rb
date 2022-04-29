@@ -1,11 +1,13 @@
 require 'tty-prompt'
+require 'rainbow/refinement'
+using Rainbow
 prompt = TTY::Prompt.new
 
 while true
 #"Your current score is " + "#{$points}!"  
 
 #menu gem prompt and loop 
-  selection = TTY::Prompt.new.select(' What Brain game would you like to play?', cycle: true, marker: '>',
+  selection = TTY::Prompt.new.select(' What Brain game would you like to play?'.white, cycle: true, marker: '>',
                                                                                 echo: false) do |menu|                                                                             
     # menu options
     menu.default 3
@@ -23,7 +25,7 @@ while true
       require_relative 'trivia' # calls trivia file.
     when 4
       system 'clear'  
-      puts 'Have a nice day!' # goodbye message and exit loop
+      puts 'Have a nice day!'.white # goodbye message and exit loop
       return
 
     end

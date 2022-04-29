@@ -1,4 +1,6 @@
 require 'tty-prompt'
+require 'rainbow/refinement'
+using Rainbow
 
 class Hangman
   def initialize
@@ -44,47 +46,47 @@ class Hangman
   def make_guess
     if @lives > 0
       # if you still have lives remaining keep playing
-      puts 'Enter a letter'
+      puts 'Enter a letter'.magenta
       guess = gets.chomp
       # good guess = new word first from word bank that was not guessed already.
       good_guess = @word.first.include? guess
 
       if guess == 'exit'
-        puts 'Thank you for playing!'
+        puts 'Thank you for playing!'.green
       # if guess is longer than one letter it will prompt you "guess one letter at a time"
       elsif guess.length > 1
         puts 'Guess one letter at a time!'
         make_guess
       # if a letter is correct prompt "correct"
       elsif good_guess
-        puts 'Correct!'
+        puts 'Correct!'.green
 
         print_teaser guess
         # if word is complete "Nice work"
         if @word.first == @word_teaser.split.join # .join joins the array back to the string
-          puts 'Nice work!'
+          puts 'Nice work!'.green
         else
           # if word not complete guess again
           make_guess
         end
       else
         @lives -= 1 # subtracts one life and prompt try again
-        puts "You have #{@lives} lives left. Try again!"
+        puts "You have #{@lives} more attempts.".yellow
         make_guess
       end
     else # when out of lives
-      puts 'Game over... better luck next time!'
+      puts 'Game over... better luck next time!'.red
     end
   end
 
   def begin
     # When starting the game this is the first thing you will see
     puts
-    puts "New game of Hangman, your word is #{@word.first.size} characters long"
+    puts "New game of Hangman, your word is #{@word.first.size} characters long".blue
     puts "To exit game type 'exit'"
 
     print_teaser # word in "_ _ _ _"
-    puts "Clue: #{@word.last}"
+    puts "Clue: #{@word.last}".blue
 
     make_guess
   end

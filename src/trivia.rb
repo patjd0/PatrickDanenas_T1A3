@@ -1,28 +1,31 @@
 require 'tty-prompt'
 require_relative 'user'
+require 'rainbow/refinement'
+using Rainbow
 
 puts "Welcome #{User.name} to Big Brain trivia"
 puts
 
 while true
-selection = TTY::Prompt.new.select(' Please choose a trivia topic!') do |menu|
+selection = TTY::Prompt.new.select(' Please choose a trivia topic!'.green) do |menu|
 
-    menu.choice 'Geography', 1
-    menu.choice 'Ancient History', 2
-    menu.choice 'Modern History', 3
-    menu.choice 'Return to main menu', 4
+    menu.choice 'Geography'.cyan, 1
+    menu.choice 'Ancient History'.cyan, 2
+    menu.choice 'Modern History'.cyan, 3
+    menu.choice 'Return to main menu'.yellow, 4
     case selection
     when 1
-      puts "that was 1"
+      puts "Geography!".cyan
+      require_relative 'trivias/geography'
     when 2
-      puts "Ancient History!"
+      puts "Ancient History!".cyan
       require_relative 'trivias/ancient'
     when 3
-      puts "Modern History it is!"
+      puts "Modern History it is!".cyan
       require_relative 'trivias/modern'
     when 4
       system 'clear'  
-      puts "Good Game!"
+      puts "Good Game!".green
       return
     
     end

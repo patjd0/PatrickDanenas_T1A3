@@ -1,8 +1,10 @@
 require 'tty-prompt'
 require_relative 'user'
+require 'rainbow/refinement'
+using Rainbow
 # opening welcome
 puts
-puts 'Welcome to math Big Brain!'
+puts 'Welcome to math Big Brain!'.green
 
 i = 0
 score = 0
@@ -19,8 +21,8 @@ while i < 10
   # the question itself
   puts('What is ' + String(x) + ' times ' + String(y) + '?')
   answer = Integer(gets)
-  correct = 'Correct!'
-  incorrect = 'Incorrect.'
+  correct = 'Correct!'.green
+  incorrect = 'Incorrect.'.red
 
   # if correct update +1 to score
   if answer == z
@@ -34,7 +36,7 @@ end
 
 # closing statement and score
 puts
-puts('Thank you for playing!')
+puts('Thank you for playing!'.green)
 puts("You scored #{score} out of " + String(i) + '.')
 puts
 
