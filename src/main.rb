@@ -3,29 +3,29 @@ require_relative 'user'
 require 'rainbow/refinement'
 using Rainbow
 prompt = TTY::Prompt.new
-#$points = nil.to_i         #score update
+# $points = nil.to_i         #score update
 
 puts 'Welcome To Big Brain!'.green
 puts 'Please enter your name.'.blue
 #----------------------------------------------------------------------------------
 user_name_count = 0
 while user_name_count < 5
-    user_name = gets.chomp.capitalize
+  user_name = gets.chomp.capitalize
 
-    #loop for a name
-    if user_name != "" 
-        break
+  # loop for a name
+  if user_name != ''
+    break
 
-    # loop 5 times or until name is entered. 
+  # loop 5 times or until name is entered.
+  else
+    user_name_count += 1
+    if user_name_count == 5
+      puts 'No name entered'.yellow
+      user_name = 'Anonymous'.yellow
     else
-        user_name_count += 1
-        if user_name_count == 5
-            puts "No name entered".yellow
-            user_name = "Anonymous".yellow
-        else
-            puts "Please enter your name:".blue
-        end
+      puts 'Please enter your name:'.blue
     end
+  end
 end
 
 puts 'Please enter your age.'.blue

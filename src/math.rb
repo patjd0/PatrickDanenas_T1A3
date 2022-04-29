@@ -41,8 +41,8 @@ puts("You scored #{score} out of " + String(i) + '.')
 puts
 
 #------------------------------------------------------------------------------------------
-#def add (score, points)
+# def add (score, points)
 #  return score += points
-#end  
-#puts add(ARGV[0].to_i, ARGV[1].to_i)  #" score #{$points.to_i}"
+# end
+# puts add(ARGV[0].to_i, ARGV[1].to_i)  #" score #{$points.to_i}"
 # still working out how to add score to user class updating overall score

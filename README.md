@@ -9,26 +9,30 @@ This is a brain training app designed to get you out of the brain foggy state. T
 ## Functionality
 
 ####  User & Menu:
-- Upon commencing the application, the user will be asked to provide a few simple details. Name and Age, from this point  it will bring the user to the main menu. This page will display three game choices, Math, Hangman and Trivia along with the name of the user and overall scores.
+- Upon commencing the application, the user will be asked to provide a few simple details. Name and Age, from this point  it will bring the user to the main menu. This page will display three game choices, Math, Hangman and Trivia along with the name of the user and overall score.
+
+![menu](/docs/menuS.png)
 
 <br>
 
 #### Math Game
 - This game asks ten random multiplication questions, tallying up a score out of ten and adding it to the users overall score.
 
-![math game](/docs/matSnip.png)
+![math game](/docs/mathS.png)
 
 <br>
 
 #### Hangman
 - This game is the same game you played as a kid in school. You are given a hint as to what the word is and number of letters, you are also displayed with a teaser of the number of characters along with correct letters. The final score will be determined by the number of lives left, and updated to the users overall score.
 
-![hangman game](/docs/hangSnip.png)
+![hangman game](/docs/hangS.png)
 
 <br>
 
 #### Trivia
-- This game is a trivia game. The user will be asked ten random questions from their choice in three catigories geography, modern history and ancient history. These scores will be tallied up with the users overall score.
+- This game is a trivia game. The user will be asked ten questions from their choice in three catigories geography, modern history and ancient history. These scores will be tallied up with the users overall score.
+
+![trivia](/docs/triviaS.png)
 
 <br>
 
@@ -52,8 +56,10 @@ This is a brain training app designed to get you out of the brain foggy state. T
 - rspec "~> 3.11"
 - tty "~> 0.5.0"
 - tty-prompt "~> 0.6.0"
+- rubocop require: false
+- rainbow '~> 3.1', '>= 3.1.1'
 
-![Gems](/docs/gemsnip.png)
+![Gems](/docs/gemSnap.png)
 
 <br>
 

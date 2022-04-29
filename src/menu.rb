@@ -4,11 +4,11 @@ using Rainbow
 prompt = TTY::Prompt.new
 
 while true
-#"Your current score is " + "#{$points}!"  
+  # "Your current score is " + "#{$points}!"
 
-#menu gem prompt and loop 
+  # menu gem prompt and loop
   selection = TTY::Prompt.new.select(' What Brain game would you like to play?'.white, cycle: true, marker: '>',
-                                                                                echo: false) do |menu|                                                                             
+                                                                                       echo: false) do |menu|
     # menu options
     menu.default 3
     menu.choice 'Hangman', 1
@@ -24,7 +24,7 @@ while true
     when 3
       require_relative 'trivia' # calls trivia file.
     when 4
-      system 'clear'  
+      system 'clear'
       puts 'Have a nice day!'.white # goodbye message and exit loop
       return
 

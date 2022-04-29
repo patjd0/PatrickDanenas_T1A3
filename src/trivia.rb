@@ -3,41 +3,30 @@ require_relative 'user'
 require 'rainbow/refinement'
 using Rainbow
 
-puts "Welcome #{User.name} to Big Brain trivia"
+puts "Welcome #{User.name} to Big Brain trivia" # welcome message
 puts
 
-while true
-selection = TTY::Prompt.new.select(' Please choose a trivia topic!'.green) do |menu|
-
+while true # menu loop for trivia games with colour!
+  selection = TTY::Prompt.new.select(' Please choose a trivia topic!'.green) do |menu|
     menu.choice 'Geography'.cyan, 1
     menu.choice 'Ancient History'.cyan, 2
     menu.choice 'Modern History'.cyan, 3
     menu.choice 'Return to main menu'.yellow, 4
     case selection
-    when 1
-      puts "Geography!".cyan
+    when 1 # start geography game
+      puts 'Geography!'.cyan
       require_relative 'trivias/geography'
-    when 2
-      puts "Ancient History!".cyan
+    when 2 # start ancient history game
+      puts 'Ancient History!'.cyan
       require_relative 'trivias/ancient'
-    when 3
-      puts "Modern History it is!".cyan
+    when 3 # start modern history game
+      puts 'Modern History it is!'.cyan
       require_relative 'trivias/modern'
-    when 4
-      system 'clear'  
-      puts "Good Game!".green
+    when 4 # return to main menu
+      system 'clear'
+      puts 'Good Game!'.green
       return
-    
+
     end
   end
 end
-
-# list of three topics in tty-prompt menu
-# geography, modern history, ancient history.
-# each option when chosen will output 10 random questions for the user to answer.
-# the user will be given a score out of 10.
-
-# puts ()
-# output you scored  _ out of 10
-# prompt user back at main menu
-# update user overall score.

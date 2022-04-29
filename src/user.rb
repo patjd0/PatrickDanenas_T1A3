@@ -6,27 +6,28 @@ prompt = TTY::Prompt.new
 
 class User
   attr_accessor :name
+
   def initialize(name)
-    @name = name  
+    @name = name
   end
-  #def user_name(name)
+  # def user_name(name)
   #  @name = name
-  #end  
+  # end
 end
 
 #--------------------------------------------------------------------------------
-#class Points
+# class Points
 #    attr_accessor :score_all
 #    def initialize(scores)
 #        @score_all = scores
-#    end  
+#    end
 #   def add_score(game_score)
 #        @score_all = game_score.dispence_score
-#    end    
-#end
+#    end
+# end
 
-#class Game_score
+# class Game_score
 #    def dispence_score
 #        [1,100]
-#    end    
-#end    
+#    end
+# end
