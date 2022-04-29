@@ -17,7 +17,8 @@ selection = TTY::Prompt.new.select(' Please choose a trivia topic!') do |menu|
     when 2
       puts "that was 2"
     when 3
-      puts "that was 3"
+      puts "Modern History it is!"
+      require_relative 'modern'
     when 4
       system 'clear'  
       puts "Good Game!"
