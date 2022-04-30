@@ -10,6 +10,7 @@ This is a brain training app designed to get you out of the brain foggy state. T
 
 ####  User & Menu:
 - Upon commencing the application, the user will be asked to provide a few simple details. Name and Age, from this point  it will bring the user to the main menu. This page will display three game choices, Math, Hangman and Trivia along with the name of the user and overall score.
+- Help menu accessible by typing "ruby main.rb -h" into terminal.
 
 ![menu](/docs/mainS.png)
 
@@ -49,9 +50,9 @@ This is a brain training app designed to get you out of the brain foggy state. T
 4. Install the gems required by typing command:
 - bundle install
 
-5. Start app with:
-- ruby src/main.rb
-
+5. Start app in src with:
+- ruby main.rb
+##### View big_brain.sh file
 <br>
 
 ## Gemfile
@@ -68,19 +69,14 @@ This is a brain training app designed to get you out of the brain foggy state. T
 
 ## Flow Chart
 This was the original plan for the application.
-Link: https://trello.com/b/z8snmedN/bigbrain-application
+
 ![flow chart](/docs/BigBrainApp.png)
 
 ## Trello
 Didn't get as much done as I would of liked but here is the end result of my trello page.
 Trello link: https://trello.com/b/z8snmedN/brain-training-application
 
-![Trello](/docs/trell.png)
+![Trello](/docs/trello.png)
 
-### End
+### End.
 This application is a work in progress.
-
-
-
-
-
