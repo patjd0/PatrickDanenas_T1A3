@@ -18,7 +18,7 @@ while true # menu loop for trivia games with colour!
       require_relative 'trivias/geography'
     when 2 # start ancient history game
       puts 'Ancient History!'.cyan
-      require_relative 'trivias/ancient'
+      require_relative 'trivias/ancient' 
     when 3 # start modern history game
       puts 'Modern History it is!'.cyan
       require_relative 'trivias/modern'

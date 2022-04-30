@@ -47,6 +47,6 @@ def run_geography(questions)      # method for running game
       puts 'Incorrect.'.red # if incorrect puts "incorrect" in red
     end
 end
-  puts('You scored ' + score.to_s + '/' + questions.length.to_s) # score / total questions
+  puts('You scored '.green + score.to_s + ' / '.green + questions.length.to_s) # score / total questions
 end
 run_geography(questions)

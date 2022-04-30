@@ -64,7 +64,7 @@ class Hangman
         print_teaser guess
         # if word is complete "Nice work"
         if @word.first == @word_teaser.split.join # .join joins the array back to the string
-          puts 'Nice work!'.green
+          puts "Nice work! You scored ".green + "#{@lives} ".yellow + "/ ".green + "6".yellow
         else
           # if word not complete guess again
           make_guess
