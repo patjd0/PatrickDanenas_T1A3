@@ -76,7 +76,7 @@ This was the original plan for the application.
 Didn't get as much done as I would of liked but here is the end result of my trello page.
 Trello link: https://trello.com/b/z8snmedN/brain-training-application
 
-![Trello](/docs/trello.png)
+![Trello](/docs/Trello.png)
 
 ### End.
 This application is a work in progress.
