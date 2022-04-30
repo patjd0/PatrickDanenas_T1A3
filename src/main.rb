@@ -1,10 +1,13 @@
 require 'tty-prompt'
-require_relative 'user'
+require 'tty-font'
 require 'rainbow/refinement'
+require_relative 'user'
 using Rainbow
+font = TTY::Font.new(:straight)
 prompt = TTY::Prompt.new
 # $points = nil.to_i         #score update
 
+puts font.write("Big Brain")
 puts 'Welcome To Big Brain!'.green
 puts 'Please enter your name.'.blue
 #----------------------------------------------------------------------------------

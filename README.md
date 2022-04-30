@@ -11,7 +11,7 @@ This is a brain training app designed to get you out of the brain foggy state. T
 ####  User & Menu:
 - Upon commencing the application, the user will be asked to provide a few simple details. Name and Age, from this point  it will bring the user to the main menu. This page will display three game choices, Math, Hangman and Trivia along with the name of the user and overall score.
 
-![menu](/docs/menuS.png)
+![menu](/docs/mainS.png)
 
 <br>
 
@@ -33,6 +33,8 @@ This is a brain training app designed to get you out of the brain foggy state. T
 - This game is a trivia game. The user will be asked ten questions from their choice in three catigories geography, modern history and ancient history. These scores will be tallied up with the users overall score.
 
 ![trivia](/docs/triviaS.png)
+
+![geography](/docs/geoS.png)
 
 <br>
 
@@ -56,10 +58,11 @@ This is a brain training app designed to get you out of the brain foggy state. T
 - rspec "~> 3.11"
 - tty "~> 0.5.0"
 - tty-prompt "~> 0.6.0"
+- tty-font
 - rubocop require: false
 - rainbow '~> 3.1', '>= 3.1.1'
 
-![Gems](/docs/gemSnap.png)
+![Gems](/docs/gemS.png)
 
 <br>
 
