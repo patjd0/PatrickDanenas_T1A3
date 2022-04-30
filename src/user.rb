@@ -16,19 +16,17 @@ class User
 end
 
 def help_menu
-system 'clear'
-puts 'This is the help menu'
-puts
-puts 'You can exit the program anytime with "CTRL-C".'
-puts
-puts 'When starting the application you will first be asked to enter your name then age.'
-puts
-puts 'From the main menu you are given a choice of three mini games to play.'
-puts
-puts 'You may exit the program by selecting exit.'
-end  
-
-
+  system 'clear'
+  puts 'This is the help menu'
+  puts
+  puts 'You can exit the program anytime with "CTRL-C".'
+  puts
+  puts 'When starting the application you will first be asked to enter your name then age.'
+  puts
+  puts 'From the main menu you are given a choice of three mini games to play.'
+  puts
+  puts 'You may exit the program by selecting exit.'
+end
 
 #---------------------overall score-------------------------------
 # class Points

@@ -5,7 +5,7 @@ require_relative 'user'
 using Rainbow
 font = TTY::Font.new(:straight)
 prompt = TTY::Prompt.new
-# $points = nil.to_i         #score update 
+# $points = nil.to_i         #score update
 #-------------------------------------------
 if ARGV[0]
   ARGV[0] = '-h'
@@ -14,7 +14,7 @@ if ARGV[0]
 end
 ARGV.clear
 #-------------------------------------------
-puts font.write("Big Brain")
+puts font.write('Big Brain')
 puts 'Welcome To Big Brain!'.green
 puts 'Please enter your name.'.blue
 #-------------------------------------------
