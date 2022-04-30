@@ -4,7 +4,7 @@ using Rainbow
 prompt = TTY::Prompt.new
 
 while true
-  # "Your current score is " + "#{$points}!"
+  # "Your current score is " + "#{$points}!"  #still in the works
 
   # menu gem prompt and loop
   selection = TTY::Prompt.new.select(' What Brain game would you like to play?'.white, cycle: true, marker: '>',

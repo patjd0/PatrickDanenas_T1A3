@@ -5,12 +5,19 @@ require_relative 'user'
 using Rainbow
 font = TTY::Font.new(:straight)
 prompt = TTY::Prompt.new
-# $points = nil.to_i         #score update
-
+# $points = nil.to_i         #score update 
+#-------------------------------------------
+if ARGV[0]
+  ARGV[0] = '-h'
+  help_menu
+  exit
+end
+ARGV.clear
+#-------------------------------------------
 puts font.write("Big Brain")
 puts 'Welcome To Big Brain!'.green
 puts 'Please enter your name.'.blue
-#----------------------------------------------------------------------------------
+#-------------------------------------------
 user_name_count = 0
 while user_name_count < 5
   user_name = gets.chomp.capitalize
@@ -32,7 +39,7 @@ while user_name_count < 5
 end
 
 puts 'Please enter your age.'.blue
-age = gets.chomp
+age = gets.chomp.to_i
 puts
 
 # object and welcome message
