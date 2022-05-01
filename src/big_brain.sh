@@ -6,19 +6,13 @@ bandle install
 
 # Install Dependencies
 gem install tty
-bundle add tty
 
 gem install tty-prompt
-bundle add tty-prompt
 
 gem install tty-font
-bundle add tty-font
 
 gem install rainbow
-bundle add rainbow
 
-# Update Gem Files
-bundle install 
 
-# Run Application from src
+# Run Application from src and clear screen
 ruby main.rb

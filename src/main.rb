@@ -14,6 +14,7 @@ if ARGV[0]
 end
 ARGV.clear
 #-------------------------------------------
+system 'clear'
 puts font.write('Big Brain')
 puts 'Welcome To Big Brain!'.green
 puts 'Please enter your name.'.blue
